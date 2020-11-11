@@ -1,6 +1,6 @@
 Trabalho Prático de Sistemas Distribuídos
       
-Grupo: Alex Lopes, Gabriel Aguilar, Guilherme Rocha,  e Luiz Araújo
+Grupo: Alex Lopes, Gabriel Aguilar, Guilherme Rocha e Luiz Araújo.
 
 Como executar uma API:
 
