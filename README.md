@@ -1,8 +1,8 @@
 Trabalho Prático de Sistemas Distribuídos
+      
+Grupo: Alex Lopes, Gabriel Aguilar, Guilherme Rocha,   e Luiz Araújo.
 
-Grupo: Alex Lopes, Gabriel Duarte, Guilherme Rocha e Luiz Araújo.
-
-Como executar a API:
+Como executar uma API:
 
 * Instale alguma versão do Python (3.5, 3.6, 3.7, 3.8, 3.9)
 * Navegue até a pasta TPSD da API.
