@@ -8,25 +8,6 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 
 
-# class GeralViewSet(viewsets.ModelViewSet):
-#     teste = "titulo__contains"
-#     queryset = Geral.objects.filter(titulo__contains='titul', cobertura__contains='')
-#
-#     serializer_class = GeralSerializer
-
-# @api_view(['GET', 'POST'])
-# def geral_api(request):
-#     if request.method == 'GET':
-#         members = Geral.objects.all()
-#         serializer = GeralSerializer(members, many=True)
-#         return Response(serializer.data)
-#
-#     if request.method == 'POST':
-#         serializer = GeralSerializer(data=request.id) #Busca o objeto pelo id no parametro
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response(serializer.data, status=status.HTTP_201_CREATED)
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['GET', 'POST'])
 def consulta_api(request):
@@ -97,35 +78,6 @@ def consulta_api(request):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-def testeview(request):
-    if request.method == 'GET':
-        pass
-        #print(request.GET.get('fname'))
-        #print(request.GET)
-    for k in request.GET.items():
-        print(k)
-
-
-
-    return render(request,'testetemplate.html')
-
-
-class ClienteViewSet(viewsets.ModelViewSet):
-    queryset = Cliente.objects.all()
-
-    serializer_class = ClienteSerializer
-
-class ServicoViewSet(viewsets.ModelViewSet):
-    queryset = Servico.objects.all()
-
-    serializer_class = ServicoSerializer
-
-class ProjetoViewSet(viewsets.ModelViewSet):
-    queryset = Projeto.objects.all()
-
-    serializer_class = ProjetoSerializer
-
 
 
 
