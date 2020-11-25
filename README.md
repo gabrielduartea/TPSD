@@ -2,9 +2,49 @@ Trabalho Prático de Sistemas Distribuídos
 
 Grupo: Alex Lopes, Gabriel Duarte, Guilherme Rocha e Luiz Araújo.
 
-Para executar a API e a interface, é necessário ter o Docker e o Docker-compose instalados. Para instalá-los, consulte o tutorial: https://www.docker.com/get-started
+Para executar a API e a interface, é necessário ter o Docker e o Docker-compose instalados. O processo abaixo é para sua instalação:
 
-Como executar a API:
+Métodos de instalação do Docker: 
+
+Windows 10 PRO:
+
+Faça o download do instalador a partir do link: https://www.docker.com/get-started
+
+Faça a instalação seguindo as opções padrão
+
+Abra a aplicação pelo ícone na area de trabalho e abra a interface clicando no submenu, próximo ao relógio, e clicando com o botão direto abra a dashboard.
+
+
+Linux:
+
+Atualize seu sistema executando os dois comandos abaixo:
+
+sudo apt update
+sudo apt upgrade
+
+Assim que atualizar o sistema, você deve instalar alguns dos pacotes necessários antes de instalar o Docker no Ubuntu. Para isso, execute o seguinte comando:
+
+sudo apt-get install curl apt-transport-https ca-certificates software-properties-common
+
+Adicione os repositórios do Docker:
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+Depois disso, apenas atualize a informação do repositório:
+
+sudo apt update
+
+Finalmente, instale o Docker com o comando abaixo:
+
+sudo apt install docker-ce
+
+Para verificar o status da instalação, execute:
+
+sudo systemctl status docker
+
+
+Com o Docker instalado corretamente, vamos executar a API:
 
 Execute o comando: docker-compose up
 
